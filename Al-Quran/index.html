@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Quran Bahasa Indonesia</title>
+    <meta name="description" content="Quran Versi Bahasa Indonesia">
+    <meta name="keywords" content="al-quran,Bahasa Indonesia,Alquran Versi Indonesia">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bin/config/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bin/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="load position-fixed w-100 h-100 top-0 end-0 bottom-0 start-0 bg-white d-flex justify-content-center align-items-center" style="z-index: 100;" id="load">
+        <div class="w-auto h-auto">
+            <span></span>
+            <h4 class="mt-4 text-center fw-bold color-4 fw-bold">Al Quran</h4>
+            <p class="text-muted">Created By Rovino Ramadhani</p>
+        </div>
+    </div>
+
+    <main class="d-none p-3" id="main">
+        <div class="position-fixed w-100 top-0 end-0 start-0 bg-white shadow-sm" style="z-index:99;height: var(--nav-h);">
+            <div class="container h-100 py-2 d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-start align-items-center h-100">
+                    <a href="index.html"><img src="icon/PNG/Artboard 1 copy.png" alt="" class="h-100 w-auto"></a>
+                </div>
+                <span class="d-block m-0 text-muted not-mobile" style="font-size: 14px;">Created By Rovino Ramadhani</span>
+                <a href="https://github.com/rovinor4"><button class="btn btn-dark"><i class="bi bi-github me-2"></i> Github</button></a>
+            </div>
+        </div>
+        <div class="container py-5 overflow-hidden rounded-3 event bgGradient" style="margin-top: calc(var(--nav-h) + 30px);">
+            <div class="text-center text-white">
+                <h1 class="m-0 arabic">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+                <p class="m-0 mt-1">Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang</p>
+            </div>
+        </div>
+    
+        <div class="container my-5">
+            <div class="row" id="AlquranList">
+            </div>
+        </div>
+    
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="icon/PNG/Artboard 1 copy 2.png" alt="" style="width: 50px;height: 50px;filter: grayscale(100%);">
+                        <img class="not-mobile" src="data:image/png;base64,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" alt="" style="width: 35px;height: 35px;filter: grayscale(100%);">
+                    </div>
+                </a>
+                <span class="text-muted ms-2 not-mobile">Al Quran | Kemenag.go.id</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/rovino_ramadhani/"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/Rovino22/"><i class="bi bi-facebook"></i></a></li>
+              </ul>
+            </footer>
+        </div>
+    </main>
+
+    <script src="bin/config/js/jquery.min.js"></script>
+    <script src="bin/js/index.js"></script>
+</body>
+</html>
